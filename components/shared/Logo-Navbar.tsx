@@ -7,8 +7,8 @@ import { Logo_NAVBAR_PROP } from "@/common/types/page-props";
 
 export function LogoNavbar({ href, name, source }: Logo_NAVBAR_PROP) {
   return (
-    <Link href={href}>
-      <div className="flex items-center cursor-pointer gap-2 px-4 sm:px-6 flex-1">
+    <div className="flex items-center gap-2 px-4 sm:px-6">
+      <Link href={href} className="cursor-pointer">
         <Image
           src={source}
           alt={name}
@@ -16,7 +16,7 @@ export function LogoNavbar({ href, name, source }: Logo_NAVBAR_PROP) {
           height={40}
           className="h-full w-auto"
         />
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

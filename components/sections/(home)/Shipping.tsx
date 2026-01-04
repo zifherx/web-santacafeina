@@ -5,12 +5,12 @@ export function Shipping() {
   return (
     <section className="py-20 px-4 bg-white animate-fade-in">
       <div className="max-w-5xl mx-auto">
-        <div className="bg-azulDark rounded-full px-8 py-4 md:px-12 md:py-8 shadow-2xl relative overflow-hidden">
-          <div className="flex items-center justify-between gap-8 text-white">
+        <div className="bg-azulDark rounded-full px-6 py-20 md:px-12 md:py-8 shadow-2xl relative overflow-hidden">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
             <div className="h-26 w-26 ">
               <Motorbike className="w-full h-full" />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col text-center md:text-left">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">
                 Envíos a Nivel Nacional
               </h3>
