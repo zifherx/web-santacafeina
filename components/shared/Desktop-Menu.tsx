@@ -8,10 +8,10 @@ import {
 
 export function DesktopMenu() {
   return (
-    <NavigationMenu className="hidden md:flex items-center">
+    <NavigationMenu className="hidden md:flex gap-8 flex-1 justify-center">
       <NavigationMenuList className="gap-8">
         <NavigationMenuItem>
-          <Link href="/" passHref>
+          <Link href="#inicio" passHref>
             <NavigationMenuLink className="text-lg font-medium hover:bg-background hover:text-accent">
               Inicio
             </NavigationMenuLink>
