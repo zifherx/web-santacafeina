@@ -24,15 +24,12 @@ export const generateSpeechWhatsApp = (
   products.forEach((product, index) => {
     message += `${index + 1}. *${product.name}*\n`;
     message += `Cantidad: ${product.quantity}\n`;
-    message += `Precio: S/ ${product.price.toFixed(2)}\n`;
-    message += `Subtotal: S/ ${(product.price * product.quantity).toFixed(
-      2
-    )}\n\n`;
+    message += `Precio: S/ ${product.price.toFixed(2)}\n\n`;
   });
 
   message += `💵 *TOTAL: S/. ${total.toFixed(2)}*\n\n`;
-  message += `Por favor, confirmen disponibilidad y método de pago.\n`;
-  message += `¡Gracias por elegir Santa Cafeína ☕!`;
+  message += `Por favor, confirmen disponibilidad.\n`;
+  message += `¡Gracias!.\n`;
 
   return encodeMessageURI(deliverTo, message);
 };
