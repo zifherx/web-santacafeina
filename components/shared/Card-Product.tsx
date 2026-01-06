@@ -39,7 +39,7 @@ export function CardProduct({ product, addItemToCart }: PRODUCT_CARD_PROP) {
             <h3 className="text-lg font-bold text-azul mb-2 group-hover:text-verde transition-colors duration-300 line-clamp-2">
               {name}
             </h3>
-            <p className="text-gray-600 text-sm mb-9 leading-snug flex-1">
+            <p className="text-gray-600 text-sm mb-9 leading-snug flex-1 max-w-50">
               {description}
             </p>
 

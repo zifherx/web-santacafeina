@@ -17,7 +17,7 @@ export function Footer2() {
               <h3 className="text-2xl font-bold mb-4">Santa Cafeína</h3>
               <p className="text-white/80 mb-6 leading-relaxed">
                 Café de la más alta calidad, cultivado responsablemente en las
-                montañas de Trujillo, Perú.
+                los tierras de San Ignacio, Jaén - Perú.
               </p>
 
               <div className="space-y-3">

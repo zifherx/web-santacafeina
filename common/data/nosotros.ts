@@ -5,7 +5,7 @@ export const nosotros_stats: IStatsNosotros[] = [
   {
     id: 1,
     icon: Sprout,
-    title: "100$ Sostenible",
+    title: "100% Sostenible",
     description: "Cultivo responsable respetando el medio ambiente",
   },
   {

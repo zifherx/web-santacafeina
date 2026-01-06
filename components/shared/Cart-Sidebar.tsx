@@ -79,7 +79,7 @@ export function CartSidebar() {
 
             <Button
               onClick={handleWhatsAppCheckout}
-              className="w-full bg-[#25D366] hover:bg-[ #20BA5A] text-white font-bold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+              className="w-full bg-[#25D366] hover:bg-[ #20BA5A] text-white cursor-pointer font-bold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
             >
               <FaWhatsapp className="w-6 h-6" />
               Comprar por WhatsApp
