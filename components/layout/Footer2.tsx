@@ -31,6 +31,17 @@ export function Footer2() {
                 </div>
                 <div>
                   <p className="text-white/60 text-sm font-medium mb-1">
+                    Correo
+                  </p>
+                  <Link
+                    href={`mailto:info@santacafeina.pe`}
+                    className="text-white font-medium"
+                  >
+                    info@santacafeina.pe
+                  </Link>
+                </div>
+                <div>
+                  <p className="text-white/60 text-sm font-medium mb-1">
                     Ubicación
                   </p>
                   <p className="text-white font-medium">
