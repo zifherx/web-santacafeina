@@ -1,5 +1,7 @@
-import { nosotros_stats } from "@/common/data/nosotros";
+"use client";
+
 import Image from "next/image";
+import { nosotros_stats } from "@/common/data/nosotros";
 
 export function Nosotros() {
   return (
@@ -14,16 +16,12 @@ export function Nosotros() {
               trasciende generaciones
             </h2>
           </div>
-          {/* <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Descubre nuestra historia y nuestro compromiso con la excelencia
-          </p> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="relative h-96 animate-slide-in-left">
             <Image
-              src="/images/origen-2.jpeg
-              "
+              src="/images/origen-1.jpeg"
               alt="Nuestro Cafetales"
               fill
               className="object-cover rounded-2xl shadow-2xl"
