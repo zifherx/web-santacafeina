@@ -1,56 +1,121 @@
 "use client";
 
 import Link from "next/link";
-import { Clock, Instagram, MapPin, Phone } from "lucide-react";
+import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Horario */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Clock size={20} />
-              <h4 className="font-bold text-lg">Horario de Atención:</h4>
+    <footer className="bg-azulDark text-white">
+      <div className="border-t border-white/10 pt-14 pb-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            {/* Left Section */}
+            <div className="animate-fade-in">
+              <h3 className="text-2xl font-bold mb-4">Santa Cafeína</h3>
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Café de la más alta calidad, cultivado responsablemente en las
+                los tierras de San Ignacio, Jaén - Perú.
+              </p>
+
+              <div className="space-y-3">
+                <div>
+                  <p className="text-white/60 text-sm font-medium mb-1">
+                    Horario de Atención
+                  </p>
+                  <p className="text-white font-medium">
+                    Lunes a Viernes: 9:00 a.m. - 8:00 p.m.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-white/60 text-sm font-medium mb-1">
+                    Correo
+                  </p>
+                  <Link
+                    href={`mailto:info@santacafeina.pe`}
+                    className="text-white font-medium"
+                  >
+                    info@santacafeina.pe
+                  </Link>
+                </div>
+                <div>
+                  <p className="text-white/60 text-sm font-medium mb-1">
+                    Ubicación
+                  </p>
+                  <p className="text-white font-medium">
+                    Trujillo, La Libertad
+                  </p>
+                </div>
+              </div>
             </div>
-            <p className="text-sm text-gray-300">Lunes a Viernes:</p>
-            <p className="text-sm text-gray-300 mb-4">9:00 a.m. 8:00 p.m.</p>
+
+            {/* Right Section */}
+            <div
+              className="animate-fade-in"
+              style={{ animationDelay: "100ms" }}
+            >
+              <h3 className="text-2xl font-bold mb-4">Síguenos</h3>
+              <p className="text-white/80 mb-6">
+                Únete a nuestra comunidad y entérate de las novedades
+              </p>
+
+              <div className="flex items-center gap-4 mb-8">
+                <Link
+                  href="https://www.instagram.com/santacafeina.pe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-white/10 hover:bg-transparent hover:border-green-300 rounded-full transition-all duration-300 group"
+                >
+                  <FaInstagram className="w-6 h-6 text-white group-hover:text-green-300 transition-colors" />
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@santacafeina.pe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-white/10 hover:bg-transparent hover:border-green-300 rounded-full transition-all duration-300 group"
+                >
+                  <FaTiktok className="w-6 h-6 text-white group-hover:text-green-300 transition-colors" />
+                </Link>
+              </div>
+
+              <div>
+                <p className="text-white/60 text-sm font-medium mb-2">
+                  Pedidos por WhatsApp
+                </p>
+                <Link
+                  href={`https://wa.me/+51959260357?text=Podría darme información al respecto.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors font-semibold"
+                >
+                  <FaWhatsapp />
+                  +51 959 260 357
+                </Link>
+              </div>
+            </div>
           </div>
 
-          {/* Ubicación */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <MapPin size={20} />
-              <h4 className="font-bold text-lg">Ubicación:</h4>
-            </div>
-            <p className="text-sm text-gray-300">Trujillo, La Libertad</p>
-          </div>
+          <div className="border-t border-white/10 pt-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/70">
+              <p>
+                &copy; {currentYear} Santa Cafeina. Todos los derechos
+                reservados.
+              </p>
 
-          {/* Contactos */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Phone size={20} />
-              <h4 className="font-bold text-lg">Contáctanos:</h4>
-            </div>
-            <p className="text-sm text-gray-300">Telf: 959 260 357</p>
-            <div className="flex gap-4 mt-4">
-              <Link
-                href={`https://www.instagram.com/santacafeina.pe/`}
-                target="_blank"
-              >
-                <Instagram />
-              </Link>
+              <span>
+                Diseñado por{" "}
+                <Link
+                  href="https://ziphonex.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-400 transition-colors"
+                >
+                  Ziphonex
+                </Link>
+              </span>
             </div>
           </div>
-        </div>
-
-        <div className="border-t border-gray-600 pt-8 text-center text-sm text-gray-400">
-          <p>
-            &copy; {currentYear} Santa Cafeina. Todos los derechos reservados.
-          </p>
         </div>
       </div>
     </footer>
