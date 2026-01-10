@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 import { Header } from "@/components/layout/Header";
-import { Footer2 } from "@/components/layout/Footer2";
+import { Footer } from "@/components/layout/Footer";
 import { LeafParticles } from "@/components/shared/Leaf-Particles";
 
 export default function PublicLayout({ children }: { children: ReactNode }) {
@@ -10,7 +10,7 @@ export default function PublicLayout({ children }: { children: ReactNode }) {
       <Header />
       <LeafParticles />
       <main>{children}</main>
-      <Footer2 />
+      <Footer />
     </div>
   );
 }
