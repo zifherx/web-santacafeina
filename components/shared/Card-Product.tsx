@@ -4,10 +4,10 @@ import Image from "next/image";
 import { ShoppingCart, Star } from "lucide-react";
 
 import { Card, CardContent } from "../ui/card";
+import { Button } from "../ui/button";
 
 import { PRODUCT_CARD_PROP } from "@/common/types/page-props";
 import { formatearMonedaPE } from "@/lib/functions.global";
-import { Button } from "../ui/button";
 
 export function CardProduct({ product, addItemToCart }: PRODUCT_CARD_PROP) {
   const { name, description, featured, image, price, id } = product;

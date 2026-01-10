@@ -1,5 +1,8 @@
-import { Motorbike } from "lucide-react";
+"use client";
+
 import Link from "next/link";
+
+import { Motorbike } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 export function Shipping() {
